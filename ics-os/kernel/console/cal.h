@@ -78,29 +78,29 @@ char *getMonthName(int monthNo)
     switch (monthNo)
     {
     case 0:
-        return "----------January----------";
+        return "-----January------";
     case 1:
-        return "----------February---------";
+        return "-----February-----";
     case 2:
-        return "----------March------------";
+        return "-----March--------";
     case 3:
-        return "----------April------------";
+        return "-----April--------";
     case 4:
-        return "----------May--------------";
+        return "-----May----------";
     case 5:
-        return "----------June-------------";
+        return "-----June---------";
     case 6:
-        return "----------July-------------";
+        return "-----July---------";
     case 7:
-        return "----------August-----------";
+        return "-----August-------";
     case 8:
-        return "----------September--------";
+        return "-----September----";
     case 9:
-        return "----------October----------";
+        return "-----October------";
     case 10:
-        return "----------November---------";
+        return "-----November-----";
     case 11:
-        return "----------December---------";
+        return "-----December-----";
     }
 }
 
@@ -109,7 +109,7 @@ void printMonth(int monthNo, int year)
     int day, i;
     int dayCount = getNumberOfDays(monthNo - 1, year);
     char *monthName = getMonthName(monthNo - 1);
-    printf("%s\n", monthName);
+    printf("%s%4d-----\n", monthName, year);
     printf("Sun Mon Tue Wed Thu Fri Sat\n");
     int spaces = getWeekDayIndex(1, monthNo, year);
     for (int i = 0; i < spaces; i++)

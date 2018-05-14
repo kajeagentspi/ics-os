@@ -1,48 +1,51 @@
 ICS-OS Commands
 ---------------
-cc- Builds a C program (invokes tcc.exe). Args: <name.exe> <name.c>
-cd- Changes working directory. Args: <directory>
-cls- Clears the screen. 
-copy- Copy source to destination: Args: <source> <destination>
-cpuid- Displays CPU information. 
-del- Deletes a files or directory. Args: <filename/dirname>
-demo_graphics- Runs the graphics demonstration.
-dkill- Dirty kill a user process/thread. No cleanup is done. Args: <pid>
-echo- Displays a string. Args: <string>  
-exit- Exits a console session.
-fgman-  Foreground manager
-files- Shows list of currently open files.
-find- Finds a file.
-help- Displays this help screen.
-kill- Kills a thread/process. Performs cleanup.  Args: <thread name>
-libinfo- Shows library information.
-loadmod- Loads a shared library (.dll or .so). Args: <module filename> 
-lsdev- Lists all modules currently installed and available. 
-lsext- Lists all extensions.
-lsmod- Shows the list of loaded libraries and modules. 
-lspcut- Shows a list of path aliases. 
-ls- Shows directory listing. Args: [-l | -osize | -oname] 
-meminfo- Show memory map information.
-mem- Shows memory information.
-mkdir- Creates a directory. Args: <directory name> 
-mount- Mounts a device. Args: fat/cdfs <partition/device> <mount point> 
-mouse-  Activate the mouse
-newconsole- Creates a new console.  
-off- Power off the machine.
-pause- Waits for a key press
-pcut- Creates a path alias. Args: <alias:> [path]
-procinfo- Show process information. Args: <pid>
-procs- List the running processes. "ps" can also be used.
-pwd- Shows the current working directory.
-rempcut- Removes a path alias. Args: <alias:>
-ren- Renames a file. Args: <oldname> <newname>
-rmdir- Removes a directory and all its subdirectories. Args: <dirname>
-run- Executes a batch file or script. Args: <script>
-set- Sets an environment variable. Args: <key>=<value>
-shutdown- Shuts down the system.
-time- Displays date and time.
-type- Displays the contents of a file. Args: <filename> [-p]
-umount- Unmounts a mounted device. Args: <mount point>
-unload- Unloads a library. Args: <library name>
-use- Tells the extension manager to use the extension: Args: <extension>  
-ver- Shows version information.
+1027:      else if (strcmp(u, "cal") == 0)
+1031:      else if (strcmp(u, "cat") == 0)
+1035:      else if (strcmp(u, "wc") == 0)
+575:      else if (strcmp(u, "fgman") == 0)
+579:      else if (strcmp(u, "mouse") == 0)
+593:      else if (strcmp(u, "shutdown") == 0)
+597:      else if (strcmp(u, "procinfo") == 0)
+607:      else if (strcmp(u, "meminfo") == 0)
+611:      else if (strcmp(u, "pause") == 0)
+617:      else if (strcmp(u, "lspcut") == 0)
+621:      else if (strcmp(u, "pcut") == 0)
+642:      else if (strcmp(u, "rmdir") == 0)
+669:      else if (strcmp(u, "rempcut") == 0)
+685:      else if (strcmp(u, "newconsole") == 0)
+691:      else if (strcmp(u, "ver") == 0)
+696:      else if (strcmp(u, "cpuid") == 0)
+702:      else if (strcmp(u, "exit") == 0)
+707:      else if (strcmp(u, "echo") == 0)
+713:      else if (strcmp(u, "use") == 0)
+721:      else if (strcmp(u, "off") == 0)
+725:      else if (strcmp(u, "files") == 0)
+729:      else if (strcmp(u, "find") == 0)
+735:      else if (strcmp(u, "dkill") == 0)
+743:      else if (strcmp(u, "kill") == 0)
+751:      else if (strcmp(u, "procs") == 0 || strcmp(u, "ps") == 0)
+755:      else if (strcmp(u, "cls") == 0 || strcmp(u, "clear") == 0)
+761:      else if (strcmp(u, "help") == 0)
+765:      else if (strcmp(u, "umount") == 0)
+780:      else if (strcmp(u, "mount") == 0)
+793:      else if (strcmp(u, "pwd") == 0)
+798:      else if (strcmp(u, "lsmod") == 0)
+802:      else if (strcmp(u, "mem") == 0)
+806:      else if (strcmp(u, "mkdir") == 0)
+815:      else if (strcmp(u, "run") == 0)
+826:      else if (strcmp(u, "ls") == 0 || strcmp(u, "dir") == 0)
+848:      else if (strcmp(u, "del") == 0)
+870:      else if (strcmp(u, "ren") == 0)
+888:      else if (strcmp(u, "type") == 0)
+901:      else if (strcmp(u, "copy") == 0 || strcmp(u, "cp") == 0)
+917:      else if (strcmp(u, "cd") == 0)
+930:      else if (strcmp(u, "loadmod") == 0)
+945:      else if (strcmp(u, "lsdev") == 0)
+949:      else if (strcmp(u, "lsext") == 0)
+953:      else if (strcmp(u, "libinfo") == 0)
+958:      else if (strcmp(u, "time") == 0)
+965:      else if (strcmp(u, "set") == 0)
+979:      else if (strcmp(u, "unload") == 0)
+988:      else if (strcmp(u, "demo_graphics") == 0)
+992:      else if (strcmp(u, "cc") == 0)
