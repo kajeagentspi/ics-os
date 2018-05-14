@@ -1,0 +1,6 @@
+*.img
+vmdex
+*.o
+*.bin
+*.hlp
+*mapfile.txt

@@ -1,8 +1,5 @@
-Run the following commands:
-
-$./scripts/install-deps.sh
-$make clean
-$make vmdex
-$make floppy
-$make boot-floppy 
+make clean
+make vmdex
+make floppy
+make boot-floppy 
 
