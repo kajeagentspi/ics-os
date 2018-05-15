@@ -30,15 +30,20 @@ int cat(char *args)
     file_PCB *fp;
     int fsize;
     char *buffer;
-    if (argc < 2 || argc > 3)
+    if (argc != 2)
     {
-        cathelp();
+        help();
         return 1;
     }
-    if ((fp = openfilex(argv[1], FILE_READ)) == NULL)
+    if (strcmp(argv[2], "--help") == 0)
     {
-        printf("File not found.\n");
-        return 1;
+        cathelp();
+        return 0;
+    }
+    else if (strcmp(argv[2], "--version") == 0)
+    {
+        version();
+        return 0;
     }
     fseek(fp, 0, SEEK_SET);
     fseek(fp, 0, SEEK_END);
@@ -47,28 +52,6 @@ int cat(char *args)
     buffer = (char *)malloc(fsize);
     fread(buffer, fsize, 1, fp);
     fclose(fp);
-
-    if (argc == 3)
-    {
-        if (strcmp(argv[2], "--help") == 0)
-        {
-            cathelp();
-            return 0;
-        }
-        else if (strcmp(argv[2], "--version") == 0)
-        {
-            catversion();
-            return 0;
-        }
-        else
-        {
-            cathelp();
-            exit(1);
-        }
-    }
-    else
-    {
-        printf("%s\n", buffer);
-    }
+    printf("%s\n", buffer);
     return 0;
 }
