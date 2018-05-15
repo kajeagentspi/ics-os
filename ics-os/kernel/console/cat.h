@@ -32,7 +32,7 @@ int cat(char *args)
     char *buffer;
     if (argc != 2)
     {
-        help();
+        cathelp();
         return 1;
     }
     if (strcmp(argv[2], "--help") == 0)
@@ -42,7 +42,7 @@ int cat(char *args)
     }
     else if (strcmp(argv[2], "--version") == 0)
     {
-        version();
+        catversion();
         return 0;
     }
     fseek(fp, 0, SEEK_SET);

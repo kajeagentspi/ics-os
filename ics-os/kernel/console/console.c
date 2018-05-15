@@ -29,6 +29,7 @@
 #include "cal.h"
 #include "cat.h"
 #include "wc.h"
+#include "calc.h"
 
 void runner()
 {
@@ -1035,6 +1036,10 @@ int console_execute(const char *str)
       else if (strcmp(u, "wc") == 0)
       {
             wc(args);
+      }
+      else if (strcmp(u, "calc") == 0)
+      {
+            calc(args);
       }
       else if (u[0] == '$')
       { //-- Sends message to a device.
